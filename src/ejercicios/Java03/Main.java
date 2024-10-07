@@ -9,7 +9,9 @@ public class Main {
 
         // Ejercicio 5
         Conteo conteo = new Conteo();
-        System.out.println(conteo.contar());
+        System.out.println(conteo.contar320a160en20List());
+        System.out.println(conteo.contar320a160en20For());
+        System.out.println(conteo.contar320a160en20DoWhile());
 
         // Ejercicio 12
         Fibonacci fibonacci = new Fibonacci();
