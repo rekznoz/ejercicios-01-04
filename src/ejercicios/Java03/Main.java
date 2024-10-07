@@ -23,5 +23,12 @@ public class Main {
         int numero = entrada.entradaNumero();
         System.out.println(fibonacci.fibonacci(numero));
 
+        // Ejercicio 19
+        Piramide piramide = new Piramide();
+        int altura = entrada.entradaNumero("Introduce la altura de la piramide: ");
+        char caracter = entrada.entradaTexto("Introduce el caracter de la piramide: ").charAt(0);
+
+        piramide.imprimirPiramide(altura, caracter).forEach(System.out::println);
+
     }
 }
