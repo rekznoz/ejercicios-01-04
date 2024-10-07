@@ -5,12 +5,6 @@ import ejercicios.Entradas;
 public class Main {
     public static void main(String[] args) {
 
-        /*
-            If-Switch - 2, 4, 16, 18 -- Terminado
-            Bucles - 5, 12, 19
-            Random/aleatorios - 2, 15
-         */
-
         Entradas entrada = new Entradas();
 
         // Ejercicio 5
