@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Entradas entrada = new Entradas();
-        
+
         // Ejercicio 2
 
         SaludoPorHora saludo = new SaludoPorHora();
