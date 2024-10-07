@@ -6,13 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Entradas entrada = new Entradas();
-
-        /*
-            If-Switch - 2, 4, 16, 18
-            Bucles - 5, 12, 19
-            Random/aleatorios - 2, 15
-         */
-
+        
         // Ejercicio 2
 
         SaludoPorHora saludo = new SaludoPorHora();
@@ -29,7 +23,9 @@ public class Main {
 
         Infiel infiel = new Infiel();
         int puntos = infiel.responderPreguntas();
-        infiel.obtenerPuntuacion(puntos);
+        System.out.println("Has obtenido " + puntos + " puntos.");
+        int probabilidad = infiel.probabilidadInfidelidad(puntos);
+        System.out.println("La probabilidad de infidelidad es del " + probabilidad + "%.");
 
         // Ejercicio 18
 

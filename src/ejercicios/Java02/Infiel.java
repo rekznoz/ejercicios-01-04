@@ -30,16 +30,21 @@ public class Infiel {
         return contador;
     }
 
-    public void obtenerPuntuacion(int puntos) {
-        if (puntos > 10) {
-            System.out.println("¡Cuidado! Tu pareja podría estar siendo infiel.");
-        } else if (puntos > 6) {
-            System.out.println("Presta atención a las señales, algo podría estar pasando.");
-        } else if (puntos > 3) {
-            System.out.println("No te preocupes, pero mantente alerta.");
-        } else {
-            System.out.println("Todo parece estar bien en tu relación.");
+    // calcular probabilidad de infidelidad
+    public int probabilidadInfidelidad(int puntos) {
+        int probabilidad = 0;
+        if (puntos > 0 && puntos <= 3) {
+            probabilidad = 10;
+        } else if (puntos >= 4 && puntos <= 7) {
+            probabilidad = 25;
+        } else if (puntos >= 8 && puntos <= 10) {
+            probabilidad = 50;
+        } else if (puntos >= 11 && puntos <= 14) {
+            probabilidad = 75;
+        } else if (puntos >= 15) {
+            probabilidad = 100;
         }
+        return probabilidad;
     }
 
 }
