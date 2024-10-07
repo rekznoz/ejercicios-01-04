@@ -1,0 +1,27 @@
+package ejercicios.Java03;
+
+import ejercicios.Entradas;
+
+public class Main {
+    public static void main(String[] args) {
+
+        /*
+            If-Switch - 2, 4, 16, 18 -- Terminado
+            Bucles - 5, 12, 19
+            Random/aleatorios - 2, 15
+         */
+
+        Entradas entrada = new Entradas();
+
+        // Ejercicio 5
+        Conteo conteo = new Conteo();
+        System.out.println(conteo.contar());
+
+        // Ejercicio 12
+        Fibonacci fibonacci = new Fibonacci();
+
+        int numero = entrada.entradaNumero();
+        System.out.println(fibonacci.fibonacci(numero));
+
+    }
+}
